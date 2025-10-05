@@ -1,0 +1,74 @@
+{
+  "name": "rootbot",
+  "version": "2.0.0",
+  "description": "RootBot - Windows PC Remote Control via Telegram (Modular Architecture)",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "node main.js",
+    "start:old": "node archive/main_old_4600lines.js",
+    "install": "node install.js",
+    "uninstall": "node uninstall.js",
+    "test": "node -e \"console.log('✅ RootBot v2.0 - Tüm modüller yüklendi!')\"",
+    "list:services": "ls -1 src/services/*.js",
+    "list:menus": "ls -1 src/menus/*.js",
+    "clean": "rm -rf logs/*.log temp/* recordings/* screenshots/*"
+  },
+  "author": "Umut Sevimcan",
+  "license": "ISC",
+  "keywords": [
+    "telegram",
+    "bot",
+    "windows",
+    "remote-control",
+    "pc-control",
+    "automation",
+    "system-monitor",
+    "remote-desktop",
+    "telegram-bot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umutsevimcann/rootbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/umutsevimcann/rootbot/issues"
+  },
+  "homepage": "https://github.com/umutsevimcann/rootbot#readme",
+  "dependencies": {
+    "active-win": "^8.1.1",
+    "clipboardy": "^5.0.0",
+    "dotenv": "^17.2.3",
+    "drivelist": "^12.0.2",
+    "express": "^5.1.0",
+    "ffmpeg-static": "^5.2.0",
+    "node-machine-id": "^1.1.12",
+    "node-notifier": "^10.0.1",
+    "node-schedule": "^2.1.1",
+    "node-telegram-bot-api": "^0.64.0",
+    "node-webcam": "^0.8.2",
+    "node-windows": "^1.0.0-beta.8",
+    "qrcode": "^1.5.4",
+    "screenshot-desktop": "^1.15.0",
+    "socket.io": "^4.8.1",
+    "speakeasy": "^2.0.0",
+    "spotify-web-api-node": "^5.0.2",
+    "systeminformation": "^5.21.22",
+    "wol": "^1.0.7"
+  },
+  "build": {
+    "appId": "com.rootbot.app",
+    "productName": "RootBot",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "RootBot"
+    }
+  }
+}
