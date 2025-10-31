@@ -1,0 +1,75 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Recordings and screenshots (klasörler korunur ama içerik ignore edilir)
+recordings/*
+!recordings/.gitkeep
+screenshots/*
+!screenshots/.gitkeep
+webcam/*
+!webcam/.gitkeep
+temp/*
+!temp/.gitkeep
+data/*
+!data/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Documentation (keep essential docs, ignore archives)
+docs/security-archive/
+*.md
+!README.md
+!CHANGELOG.md
+!CONTRIBUTING.md
+!SECURITY.md
+!CODE_OF_CONDUCT.md
+!LICENSE.md
+
+# Build files
+dist/
+build/
+
+# Config (old)
+config.json
+.eslintrc.json.old
+eslint.config.js
+
+# Tests (kept locally, not on GitHub)
+tests/
+*.test.js
+test/
+jest.config.js
+coverage/
+
+# Security files
+backups/
+secret-rotation.log
+.env.vault.backup.*
+.env.vault
+.env.backup

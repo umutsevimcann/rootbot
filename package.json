@@ -1,0 +1,60 @@
+{
+  "name": "rootbot",
+  "version": "2.0.0",
+  "description": "RootBot - Windows PC Remote Control via Telegram (Modular Architecture)",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "node main.js",
+    "setup": "node install.js",
+    "clean": "node uninstall.js"
+  },
+  "author": "Umut Sevimcan",
+  "license": "ISC",
+  "keywords": [
+    "telegram",
+    "bot",
+    "windows",
+    "remote-control",
+    "pc-control",
+    "automation",
+    "system-monitor",
+    "remote-desktop",
+    "telegram-bot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umutsevimcann/rootbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/umutsevimcann/rootbot/issues"
+  },
+  "homepage": "https://github.com/umutsevimcann/rootbot#readme",
+  "dependencies": {
+    "active-win": "^8.1.1",
+    "clipboardy": "^5.0.0",
+    "dotenv": "^17.2.3",
+    "ffmpeg-static": "^5.2.0",
+    "node-machine-id": "^1.1.12",
+    "node-notifier": "^10.0.1",
+    "node-schedule": "^2.1.1",
+    "node-telegram-bot-api": "^0.66.0",
+    "node-webcam": "^0.8.2",
+    "systeminformation": "^5.27.11"
+  },
+  "build": {
+    "appId": "com.rootbot.app",
+    "productName": "RootBot",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "RootBot"
+    }
+  }
+}
