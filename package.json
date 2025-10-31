@@ -1,7 +1,7 @@
 {
   "name": "rootbot",
   "version": "2.0.0",
-  "description": "RootBot - Windows PC Remote Control via Telegram (Modular Architecture)",
+  "description": "🤖 Windows PC Remote Control via Telegram | 100+ Features | Modular Architecture | Turkish Documentation",
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
